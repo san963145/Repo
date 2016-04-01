@@ -1,1 +1,3 @@
-java -jar  app.war
+java -jar  jenkins.war
+
+持续集成  单一源码库  自动化pull、compile、test
