@@ -4,3 +4,7 @@
 因为(x: Int) => x + 1在编写的时候就已经封闭了。但任何带有自由变量的函数文本，如(x: Int) => x + more，都是开放术语：open term。
 因此，任何依照(x: Int) => x + more在运行期创建的函数值将必须捕获它的自由变量，more，的绑定。
 由于函数值是关闭这个开放术语(x: Int) => x + more的行动的最终产物，得到的函数值将包含一个指向捕获的more变量的参考，因此被称为闭包。
+
+It makes it possible for a function to have "private" variables.
+
+A closure is a function having access to the parent scope, even after the parent function has closed.
